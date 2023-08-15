@@ -44,12 +44,12 @@ int main(int argc, char **argv)
 			read = getline(&line, *len, file);
 			continue;
 		}
-		find_opcode(opcode, &stack, line_number);
+		find_op(opcode, &stack, line_number);
 		read = getline(&line, &len, file);
 		line_number = line_number + 1;
 	}
 	free(line);
-	free_stack(stack);
+	free_s(stack);
 	fclose(file);
 	return (EXIT_SUCCESS);
 }
