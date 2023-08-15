@@ -8,7 +8,7 @@
  * @line_number: line num of read line
  */
 
-void push(stack_y **stack, unsigned int line_number)
+void push(stack_t **stack, unsigned int line_number)
 {
 	int value;
 	stack_t *new_node;
