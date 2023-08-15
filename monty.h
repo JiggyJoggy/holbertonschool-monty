@@ -37,4 +37,6 @@ typedef struct operate_s
 
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, __attribute((unused))unsigned int line_number);
+void free_s(stack_t *stack);
+void find_op(char (opcode, stack_t **stack, unsigned int line_number);
 #endif
